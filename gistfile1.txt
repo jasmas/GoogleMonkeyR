@@ -746,7 +746,7 @@ var UIL =
 	{
 		this.registerControls();
 		var style = '';
-        style += (".col {width: 100%;} div#scrollTop a {background:url("+UIL.RES.TOP_PNG+") transparent;border-radius: 10px 10px 10px 10px;bottom: 30px;height: 40px;position: fixed;right: 30px;width: 40px;z-index: 10000;}div#scrollTop a{-webkit-transition: opacity 1.0s ease;-moz-transition: opacity 1.0s ease;-o-transition: opacity 1.0s ease;0} div#scrollTop a.mh_show{opacity: 0.2} div#scrollTop a.mh_hide{opacity: 0}div#scrollTop a:hover{-webkit-transition: opacity .5s ease;-moz-transition: opacity .5s ease;-o-transition: opacity .5s ease;opacity: 0.5;}");
+        style += ("div#scrollTop a {background:url("+UIL.RES.TOP_PNG+") transparent;border-radius: 10px 10px 10px 10px;bottom: 30px;height: 40px;position: fixed;right: 30px;width: 40px;z-index: 10000;}div#scrollTop a{-webkit-transition: opacity 1.0s ease;-moz-transition: opacity 1.0s ease;-o-transition: opacity 1.0s ease;0} div#scrollTop a.mh_show{opacity: 0.2} div#scrollTop a.mh_hide{opacity: 0}div#scrollTop a:hover{-webkit-transition: opacity .5s ease;-moz-transition: opacity .5s ease;-o-transition: opacity .5s ease;opacity: 0.5;}");
 		this.showBackToTopLink(true);
 		// style += ("#cnt #center_col, #cnt #foot, .mw {width:auto !important; max-width:100% !important;} #rhs {left:auto; !important}#botstuff .sp_cnt,#botstuff .ssp, #ires{display:none} .s{max-width:98%!important;} .vshid{display:inline} #res h3.r {white-space:normal}");
 		if(this.hideSearch)
