@@ -1,6 +1,6 @@
 // ==UserScript==
 // @author			mungushume
-// @version			1.7.0
+// @version			1.7.1
 // @name			GoogleMonkeyR
 // @namespace		http://www.monkeyr.com
 // @description		Google - Multiple columns of results, Remove "Sponsored Links", Number results, Auto-load more results, Remove web search dialogues, Open external links in a new tab, self updating and all configurable from a simple user dialogue.
@@ -28,6 +28,9 @@
 // @scriptsource	http://userscripts.org/scripts/show/9310
 // @scriptsource	http://google.monkeyr.com/script/1.7.0/googlemonkeyr.user.js
 /* StartHistory
+
+v1.7.1 - 29 Aug 2014
+ - Bug fix: Google css changes, fix layout
 
 v1.7.0 - 01 Nov 2013
  - Bug fix: Google changes in some tlds fix for display issues
