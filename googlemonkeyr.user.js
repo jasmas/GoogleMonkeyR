@@ -25,7 +25,7 @@
 // @grant			GM_getValue
 // @grant			GM_xmlhttpRequest
 // @uso:script		9310
-// @scriptsource	http://git.io/Hayb_g
+// @scriptsource	http://git.io/jUIidg
 /* StartHistory
 
 v1.7.2 - 11 Oct 2014
