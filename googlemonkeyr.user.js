@@ -1,6 +1,6 @@
 // ==UserScript==
 // @author			mungushume
-// @version			1.7.1
+// @version			1.7.2
 // @name			GoogleMonkeyR
 // @namespace		http://www.monkeyr.com
 // @description		Google - Multiple columns of results, Remove "Sponsored Links", Number results, Auto-load more results, Remove web search dialogues, Open external links in a new tab, self updating and all configurable from a simple user dialogue.
@@ -25,9 +25,13 @@
 // @grant			GM_getValue
 // @grant			GM_xmlhttpRequest
 // @uso:script		9310
-// @scriptsource	http://userscripts.org/scripts/show/9310
-// @scriptsource	http://google.monkeyr.com/script/1.7.0/googlemonkeyr.user.js
+// @scriptsource	http://git.io/Hayb_g
 /* StartHistory
+
+v1.7.2 - 11 Oct 2014
+ - Security: Switch includes from .* to .tld, avoid work on, e.g., www.google.darkside.ca
+ - Bug fix: Calculator results (single result) pages now work properly (merged from 
+ https://www.greasyfork.org/forum/discussion/1814/update-v1-7-2
 
 v1.7.1 - 29 Aug 2014
  - Bug fix: Google css changes, fix layout
@@ -677,7 +681,7 @@ var UIL =
 		if(this.hideSearch)
 		{
 //			style += ("#rcnt{margin-top:1em} #sfcnt,#sftr,#searchform{display:none!important;}#cnt{padding:0}#cnt .mw:first-child{position:absolute;top:4.5em;right:0}#rshdr .sfcc{position:absolute;top:2em;right:0}");
-			style += ("#ab_ctls,#ab_name,#resultStats{top:0} #gb,#gb.gbes,#gb.gbesi,#gb.gbem,#gb.gbemi{height:0!important}#gbx1,#gbx2{height:0!important}#gbq2[class='gbt'] #gbqfw{display:none;}#main{margin-top:44px!important}#gbu{margin-right:232px!important}");
+			style += ("hr.rgsep { margin: 0 -15px 16px; } #extrares.med {padding: 0 !important} #ab_ctls,#ab_name,#resultStats{top:0} #gb,#gb.gbes,#gb.gbesi,#gb.gbem,#gb.gbemi{height:0!important}#gbx1,#gbx2{height:0!important}#gbq2[class='gbt'] #gbqfw{display:none;}#main{margin-top:44px!important}#gbu{margin-right:232px!important}");
 			// document.getElementById('gbq').addEventListener("DOMAttrModified", this.resizeWatcher, false);
 			//this.resizeWatcher(true);
 		}
